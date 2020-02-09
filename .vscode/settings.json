@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "java.saveActions.organizeImports": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.dependency.packagePresentation": "hierarchical"
+}
