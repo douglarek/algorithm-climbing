@@ -16,6 +16,9 @@ import java.util.Map;
  * 因为 nums[0] + nums[1] = 2 + 7 = 9
  * 所以返回 [0, 1]
  * </pre>
+ *
+ * <p>
+ * {@link https://leetcode-cn.com/problems/two-sum/}
  */
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -26,7 +29,7 @@ class Solution {
         Map<Integer, Integer> tmp = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (tmp.containsKey(target - nums[i])) {
-                return new int[] { tmp.get(target - nums[i]), i };
+                return new int[] {tmp.get(target - nums[i]), i};
             }
             tmp.put(nums[i], i);
         }
