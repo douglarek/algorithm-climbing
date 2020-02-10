@@ -2,6 +2,7 @@ package xin.lingchao.java.linked_list._206;
 
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
+import xin.lingchao.java.structure.ListNode;
 
 public class SolutionTest {
     @Test

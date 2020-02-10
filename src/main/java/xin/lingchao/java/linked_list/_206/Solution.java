@@ -1,5 +1,7 @@
 package xin.lingchao.java.linked_list._206;
 
+import xin.lingchao.java.structure.ListNode;
+
 /**
  * 反转一个单链表。
  * <p>
