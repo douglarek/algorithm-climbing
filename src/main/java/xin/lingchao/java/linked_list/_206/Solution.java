@@ -28,4 +28,21 @@ class Solution {
 
         return pre;
     }
+
+    /**
+     * 递归版
+     *
+     */
+    public ListNode reverseListRecursively(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode p = reverseListRecursively(head.next); // 反转 head.next
+        head.next.next = head; // head.next 已经反转, 那么反转 head 之前的部分只需要 head.next 的下一个指向当前 head.
+        head.next = null; // 此处 head.next 必须指向 null, 否则链表可能产生循环. 使用大小为 2 的链表测试代码, 则可能会捕获此错误.
+
+        return p;
+    }
+
 }
