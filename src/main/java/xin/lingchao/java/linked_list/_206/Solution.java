@@ -14,6 +14,16 @@ package xin.lingchao.java.linked_list._206;
  * {@link https://leetcode-cn.com/problems/reverse-linked-list/}
  */
 class Solution {
+    /**
+     * 假设现在有 1-&gt;2-&gt;3
+     *
+     * 1) 1-&gt;pre, pre=1;
+     * <p>
+     * 2) 2-&gt;pre 即 2-&gt;1, pre=2, 即 pre=2-&gt;1;
+     * <p>
+     * 3) 3-&gt;pre 即3-&gt;2-&gt;1, pre=3, 即 pre=3-&gt;2-&gt;1
+     *
+     */
     public ListNode reverseList(ListNode head) {
 
         ListNode pre = null;
