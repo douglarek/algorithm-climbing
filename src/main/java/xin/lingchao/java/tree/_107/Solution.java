@@ -53,7 +53,7 @@ class Solution {
         }
 
         if (res.size() <= level) {
-            res.add(level, new ArrayList<>()); //
+            res.add(level, new ArrayList<>()); // 此时需新建一个 list 装 当前节点值
         }
 
         res.get(level).add(root.val);
