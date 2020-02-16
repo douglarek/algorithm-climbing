@@ -1,11 +1,10 @@
 package xin.lingchao.java.tree._257;
 
-import static org.junit.Assert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.Arrays;
 
-import org.hamcrest.CoreMatchers;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import xin.lingchao.java.structure.TreeNode;
 
@@ -20,6 +19,6 @@ public class SolutionTest {
         root.left = left;
         root.right = new TreeNode(3);
 
-        assertThat(s.binaryTreePaths(root), CoreMatchers.is(Arrays.asList("1->2->5", "1->3")));
+        assertEquals(s.binaryTreePaths(root), Arrays.asList("1->2->5", "1->3"));
     }
 }

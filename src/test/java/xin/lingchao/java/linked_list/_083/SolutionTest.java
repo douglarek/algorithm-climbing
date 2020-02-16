@@ -1,7 +1,9 @@
 package xin.lingchao.java.linked_list._083;
 
-import static org.junit.Assert.assertTrue;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
 import xin.lingchao.java.structure.ListNode;
 
 public class SolutionTest {
