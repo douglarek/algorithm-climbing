@@ -50,7 +50,8 @@ import xin.lingchao.java.structure.TreeNode;
  * </pre>
  *
  * <p>
- * @see <a href="https://leetcode-cn.com/problems/same-tree/">https://leetcode-cn.com/problems/same-tree/</a>
+ * See <a href=
+ * "https://leetcode-cn.com/problems/same-tree/">https://leetcode-cn.com/problems/same-tree/</a>
  */
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
