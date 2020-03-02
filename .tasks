@@ -1,0 +1,16 @@
+# vim: set fenc=utf-8 ft=dosini:
+
+[maven-test]
+command=./mvnw clean test
+cwd=$(VIM_ROOT)
+output=terminal
+errorformat=%f:%l:%m
+save=1
+
+[maven-test-current]
+command=./mvnw clean test -Dtest="$(VIM_FILENOEXT)"
+cwd=$(VIM_ROOT)
+output=terminal
+errorformat=%f:%l:%m
+save=1
+
