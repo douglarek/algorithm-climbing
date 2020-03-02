@@ -8,22 +8,26 @@ import xin.lingchao.java.leetcode.structure.ListNode;
  * <b>示例:</b>
  *
  * <pre>
- * 输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL
- * 输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL
+ * {@code
+ * 输入: 1->2->3->4->5->NULL
+ * 输出: 5->4->3->2->1->NULL
+ * }
  * </pre>
  *
  * <p>
- * {@link https://leetcode-cn.com/problems/reverse-linked-list/}
+ *
+ * <b>进阶:</b> 你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
+ *
+ * <p>
+ * See <a href=
+ * "https://leetcode-cn.com/problems/reverse-linked-list/">https://leetcode-cn.com/problems/reverse-linked-list/</a>
  */
 class Solution {
-    /**
-     * 假设现在有 1-&gt;2-&gt;3
+    /*
+     * 假设现在有 1->2->3
      *
-     * 1) 1-&gt;pre, pre=1;
-     * <p>
-     * 2) 2-&gt;pre 即 2-&gt;1, pre=2, 即 pre=2-&gt;1;
-     * <p>
-     * 3) 3-&gt;pre 即3-&gt;2-&gt;1, pre=3, 即 pre=3-&gt;2-&gt;1
+     * 1) 1->pre, pre=1; 2) 2->pre 即 2->1, pre=2, 即 pre=2->1; 3) 3->pre 即3->2->1, pre=3, 即
+     * pre=3->2->1
      *
      */
     public ListNode reverseList(ListNode head) {
