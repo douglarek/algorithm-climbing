@@ -1,5 +1,8 @@
 package xin.lingchao.java.leetcode.structure;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ListNode {
     public int val;
     public ListNode next;
@@ -26,5 +29,15 @@ public class ListNode {
             System.out.println(head.val);
             head = head.next;
         }
+    }
+
+    public int[] toArray() {
+        List<Integer> res = new ArrayList<>();
+        ListNode head = this;
+        while (head != null) {
+            res.add(head.val);
+            head = head.next;
+        }
+        return res.stream().mapToInt(s -> s).toArray();
     }
 }
