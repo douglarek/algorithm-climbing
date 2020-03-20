@@ -1,9 +1,9 @@
 package xin.lingchao.java.leetcode.concurrency.p1114;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.RepeatedTest;
 
 public class FooTest {
-    @Test
+    @RepeatedTest(value = 5)
     public void testFoo() {
 
         Foo foo = new Foo();
