@@ -1,7 +1,6 @@
 package xin.lingchao.java.leetcode.concurrency.p1116;
 
 import java.util.concurrent.CountDownLatch;
-
 import org.junit.jupiter.api.Test;
 
 public class ZeroEvenOddTest {
