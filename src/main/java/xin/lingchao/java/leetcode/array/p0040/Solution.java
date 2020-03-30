@@ -3,6 +3,7 @@ package xin.lingchao.java.leetcode.array.p0040;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.Random;
 
 
 // 输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
@@ -44,7 +45,21 @@ class Solution {
         return j > k ? quickSearch(nums, lo, j - 1, k) : quickSearch(nums, j + 1, hi, k);
     }
 
+    private int random(int lo, int hi) {
+        Random r = new Random();
+        return r.nextInt(hi - lo + 1) + lo;
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
     private int partition(int[] nums, int lo, int hi) {
+        int ri = random(lo, hi);
+        swap(nums, ri, lo);
+
         int v = nums[lo];
         int i = lo, j = hi + 1;
         while (true) {
@@ -53,13 +68,10 @@ class Solution {
             if (i >= j) {
                 break;
             }
-            int temp = nums[j];
-            nums[j] = nums[i];
-            nums[i] = temp;
+            swap(nums, i, j);
         }
 
-        nums[lo] = nums[j];
-        nums[j] = v;
+        swap(nums, lo, j);
         return j;
     }
 
