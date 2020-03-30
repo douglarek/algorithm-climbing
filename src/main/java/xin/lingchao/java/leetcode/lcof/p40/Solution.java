@@ -1,4 +1,4 @@
-package xin.lingchao.java.leetcode.array.p0040;
+package xin.lingchao.java.leetcode.lcof.p40;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;

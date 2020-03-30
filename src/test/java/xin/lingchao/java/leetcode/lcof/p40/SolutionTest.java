@@ -1,4 +1,4 @@
-package xin.lingchao.java.leetcode.array.p0040;
+package xin.lingchao.java.leetcode.lcof.p40;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
